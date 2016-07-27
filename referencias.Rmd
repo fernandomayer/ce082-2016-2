@@ -5,55 +5,18 @@ output:
     toc: false
 ---
 
+Não existem referências únicas para esta disciplina. Abaixo estão
+algumas referências divididas por assunto. Ao longo do curso serão
+indicadas as referências mais adequadas em cada etapa.
+
 ## Referências básicas
 
-
-- Bussab, WO; [Morettin, PA](http://www.ime.usp.br/~pam).
-  [Estatística Básica](http://www.editorasaraiva.com.br/produtos/show/isbn:9788502207998/titulo:estatistica-basica/).
-  São Paulo: [Editora Saraiva](http://www.saraivauni.com.br), 2006 (5ª
-  Edição).
-- [Magalhães, MN](http://www.ime.usp.br/~marcos);
-      [Lima, ACP](http://www.ime.usp.br/~acarlos).
-      [Noções de Probabilidade e Estatística](http://www.ime.usp.br/~noproest).
-      São Paulo: EDUSP, 2008 (6ª edição).
-- Montgomery, DC; Runger, GC.
-  [Estatística aplicada e probabilidade para engenheiros](http://www.grupogen.com.br/estatistica-aplicada-e-probabilidade-para-engenheiros).
-  Rio de Janeiro: LTC Editora, 2012 (5ª Edição).
-
-## Referências complementares
-
-- Andrade, DF; Ogliari, PJ.
-  [Estatística para as ciências agrárias e biológicas, com noções de experimentação](http://www.editora.ufsc.br/publicacao/detalhe/id/537). Florianópolis: Editora da UFSC, 2013.
-- Dantas, CAB.
-  [Probabilidade: um curso introdutório](http://www.edusp.com.br/detlivro.asp?id=41384).
-  São Paulo: EDUSP, 2008.
-- Morettin, LG.
-  [Estatística básica: probabilidade e inferência](http://loja.pearson.com.br/estatistica-basica-probabilidade-e-inferencia-9788576053705/p).
-  São Paulo: Pearson, 2010.
-- Navidi, W.
-  [Probabilidade e estatística para ciências exatas](http://www.grupoa.com.br/livros/matematica-e-estatistica/probabilidade-e-estatistica-para-ciencias-exatas/9788580550733).
-  Porto Alegre: Bookman, 2012.
-- Spiegel, MR; Schiller, J; Srinivasan, A.
-  [Probabilidade e estatística](http://www.grupoa.com.br/livros/matematica-e-estatistica/probabilidade-e-estatistica/9788565837187).
-  Porto Alegre: Bookman, 2013.
-- **Nota:** existem diversos textos de estatística compatíveis com o
-      programa do curso. Consulte o professor sobre a adequação de
-      qualquer outra referência bibliográfica.
-
-## Referências *online*
-
-- [Coursera](https://pt.coursera.org)
-- [Kahn Academy](http://www.khanacademy.org) vídeos sobre diversos
-      assuntos, incluindo sessões especificas de estatística e
-      probabilidade.
-- [Udacity Online courses](http://www.udacity.com). Ver em particular:
-    - [Introduction to Statistics](https://www.udacity.com/course/st101)
-
-## Leituras complementares
-
-<!-- - Hilborn, R; Mangel, M. -->
-<!--   [The ecological detective: confronting models with data](http://press.princeton.edu/titles/5987.html). -->
-<!--   Princeton University Press, 1997. -->
+- Bruce, C.
+  [Novas aventuras científicas de Sherlock Holmes: casos de lógica, matemática e probabilidade](http://www.zahar.com.br/livro/novas-aventuras-cientificas-de-sherlock-holmes).
+  Rio de Janeiro: Zahar, 2003.
+- Hilborn, R; Mangel, M.
+  [The ecological detective: confronting models with data](http://press.princeton.edu/titles/5987.html).
+  Princeton University Press, 1997.
 - Huff, D.
   [Como mentir com estatística](http://www.intrinseca.com.br/livro/624/).
   Rio de Janeiro: Intrínseca, 2016.
@@ -66,3 +29,23 @@ output:
 - Wheelan, C.
   [Estatística: o que é, para que serve, como funciona](http://www.zahar.com.br/livro/estatistica).
   Rio de Janeiro: Zahar, 2016.
+
+## Metodologia científica
+
+- Lakatos, EM; Marconi, MA.
+[Fundamentos de metodologia científica](http://www.grupogen.com.br/fundamentos-metodologia-cientifica).
+São Paulo: Atlas, 2010.
+- Marconi, MA.; Lakatos, EM.
+  [Metodologia do trabalho científico](http://www.grupogen.com.br/metodologia-trabalho-cientifico). São Paulo: Atlas, 2007.
+
+## Filosofia da ciência
+
+- Alves, R.
+  [Filosofia da ciência: introdução ao jogo e a suas regras](http://www.loyola.com.br/produtos_descricao.asp?lang=pt_br&codigo_produto=4163).
+  São Paulo: Loyola, 2007.
+- Dutra, LHA.
+  [Introdução à teoria da ciência](http://www.egov.ufsc.br/portal/conteudo/introdu%C3%A7%C3%A3o-%C3%A0-teoria-da-ci%C3%AAncia).
+  Florianópolis: Editora da UFSC, 2009.
+- Kuhn, TS.
+  [A estrutura das revoluções científicas](http://www.editoraperspectiva.com.br/index.php?apg=cat&npr=333).
+  São Paulo: Perspectiva, 2011.

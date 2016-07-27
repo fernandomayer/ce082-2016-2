@@ -26,13 +26,9 @@ navbar:
       href: referencias.html
     - text: "Materiais"
       menu:
-      - text: "Tópico 1"
-      - text: "Página A"
-        href: pagA.html
+      - text: "Aulas"
       - text: "----------"
-      - text: "Tópico 2"
-      - text: "Página B"
-        href: pagB.html
+      - text: "Seminários"
   right:
     - text: GitHub
       icon: fa-github fa-lg

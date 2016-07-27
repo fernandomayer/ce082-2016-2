@@ -1,5 +1,5 @@
 ---
-title: "Histórico das aulas do curso"
+title: "Histórico das aulas/seminários do curso"
 output:
   html_document:
     toc: false
@@ -12,11 +12,7 @@ source("setup_knitr.R")
 Abaixo o histórico de atividades realizadas em classe e atividades extra
 classe aplicadas.
 
-- **DD/MM**: Apresentação da disciplina.
-
-## Exercícios
-
-- Lista 1: Assunto
+- **01/08**: Apresentação da disciplina.
 
 ## Notas
 
