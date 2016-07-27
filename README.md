@@ -1,15 +1,15 @@
-# CE000 - 2016-2
+# CE082 - 2016-2
 
-[![Build Status](https://travis-ci.org/fernandomayer/disciplinas-template.svg)](https://travis-ci.org/fernandomayer/disciplinas-template)
+[![Build Status](https://travis-ci.org/fernandomayer/ce082-2016-2.svg)](https://travis-ci.org/fernandomayer/ce082-2016-2)
 
-## CE000 - Nome de Disciplina
+## CE082 - Seminários
 
-Repositório da disciplina CE000 - Nome da Disciplina, ministrada na UFPR, no
-segundo semestre de 2016, para o curso de CURSO (T).
+Repositório da disciplina CE082 - Seminários, ministrada na UFPR, no
+segundo semestre de 2016, para o curso de Estatística (EST).
 
 Este repositório contém todo o material de aula e os arquivos
 necessários para gerar a página da disciplina, disponível em:
-(INSERIR LINK)
+https://fernandomayer.github.io/ce082-2016-2
 
 ### Para gerar o site
 
