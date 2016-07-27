@@ -1,0 +1,54 @@
+---
+title: "CE082 - Seminários"
+output:
+  html_document:
+    toc: false
+---
+
+```{r setup, include=FALSE}
+source("setup_knitr.R")
+```
+
+[![Build Status](https://travis-ci.org/fernandomayer/ce082-2016-2.svg)](https://travis-ci.org/fernandomayer/ce082-2016-2)
+
+<!-- <div class="alert alert-danger" role="alert"> **ATENÇÃO!** Aqui é um -->
+<!-- espaço para avisos. Comente quando não utilizar. </div> -->
+
+# Detalhes da oferta da disciplina
+
+- **Curso:** Seminários (EST)
+- **Período:** segundo semestre de 2016
+- **Professor Responsável:** [Fernando de Pol Mayer][], ([LEG][]:
+  Laboratório de Estatística e Geoinformação)
+- **Horários e Locais:**
+    - Segunda, 20:40 - 22:00h, **a confirmar**
+- **Horários de atendimento do professor:**
+    - Terças e quintas, 14:00-18:00 (preferenciais). Outros horários
+      podem ser agendados previamente por email.
+- **Frequência**: de acordo com as normas da Universidade, mínimo de 75%
+- **Avaliação**: a média final será composta de notas de apresentação de
+  seminários e entrega de trabalhos.
+- **Datas importantes:** De acordo com a [Resolução 49/15 - CEPE][]:
+    - **01/08**: Início do semestre letivo
+    - **12/12**: Final do semestre letivo
+    - **15/12-21/12**: Período de exames
+
+# Programa/objetivos da disciplina
+
+O objetivo desta disciplina é proporcionar aos alunos uma visão
+histórica e crítica da Estatística como ciência, demonstrando todo seu
+potencial de utilização em diversas áreas do conhecimento e também no
+mercado profissional.
+
+O curso compreende quatro grandes tópicos:
+
+- História da Estatística
+- Evolução das principais técnicas
+- A Profissão de Estatístico
+- Seminários apresentados por profissionais de diversas áreas
+
+<!-- links -->
+
+[Fernando de Pol Mayer]: https://fernandomayer.github.io
+[LEG]: http://www.leg.ufpr.br
+[Resolução 49/15 - CEPE]: http://www.ufpr.br/soc/descarregar_arquivo.php?cod=1064
