@@ -1,0 +1,161 @@
+---
+title: "CE082 - Seminários"
+author: "Fernando Mayer"
+date: "08 de Agosto, 2016"
+output:
+  revealjs::revealjs_presentation:
+    theme: black
+    transition: slide
+    slide_level: 1
+    center: true
+    self_contained: false
+    reveal_plugins: "notes"
+    reveal_options:
+      slideNumber: true
+---
+
+```{r setup, include=FALSE}
+source("setup_knitr.R")
+```
+
+# Sobre
+## Formação
+
+- Oceanógrafo (UNIVALI, 2005)
+    - Modelos Lineares Generalizados (MLGs)
+- Mestre em Ecologia (UFSC, 2011)
+    - Modelos Lineares generalizados para dados de contagem com
+      superdispersão e excesso de zeros
+- Doutorado em Estatística e Experimentação Agronômica (ESALQ/USP,
+  2013-2018)
+    - Modelos estado-espaço não lineares para a dinâmica de biomassa de
+      estoques pesqueiros
+        - Inferência bayesiana
+
+# Sobre
+## Mercado de trabalho
+
+- Grupo de Estudos Pesqueiros (GEP) (UNIVALI, 2005-2008): análise de
+  dados pesqueiros (atuns e afins) e relatórios para ICCAT
+    - Difusão do R, cursos
+    - MLGs
+    - "Manipulação" de bases de dados
+- Ministério da Pesca e Aquicultura (MPA, 2010-2011): estatística
+  pesqueira marinha do Brasil (2008 a 2010)
+    - Métodos estatísticos para dados faltantes
+    - Interação com IBGE
+    - Relações políticas
+
+# Sobre
+## Atuação acadêmica
+
+- Professor substituto ECZ/UFSC (2011-2013)
+    - Recursos pesqueiros, ecologia de populações, informática aplicada
+- Professor efetivo IMEF/FURG (2015)
+    - Estatística básica
+- Professor efetivo DEST/UFPR (2016-?)
+
+# O que vamos fazer nessa disciplina?
+
+> "Metafilosofia" da Estatística
+
+- História da Estatística
+- Evolução das principais técnicas
+- A Profissão de Estatístico
+- Fundamentos de metodologia científica e filosofia da ciência
+- Seminários apresentados por profissionais de diversas áreas
+
+# Quem veio aqui por causa do termo "data science"?
+
+# Data Science? Estatística?
+
+[The data science Venn diagram](http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram)
+
+![](img/Data_Science_VD.png)
+
+# Data Science? Estatística?
+
+- Conhecimento de matemática e estatística: é o que você está fazendo
+  aqui
+- Habilidade hacker:
+    - Saber programar
+    - Saber responder perguntas sozinho
+    - Saber usar ferramentas de busca
+- Experiência substancial: depende da área dos dados, da interação com o
+  pesquisador, ou de buscar o conhecimento
+
+# Estatística
+
+> I keep saying that the sexy job in the next 10 years will be
+> statisticians, and I’m not kidding.
+>
+> --- Hal Varian, economista chefe do Google
+
+Lohr, S. *For Today’s Graduate, Just One Word: Statistics*. [New York
+Times](http://www.nytimes.com/2009/08/06/technology/06stats.html?_r=0),
+6 ago 2009.
+
+# O detetive estatístico
+## Fumar causa câncer?
+
+Método científico (testar uma hipótese):
+
+- Conduzir um experiento controlado
+- A variável de interesse deve ser a única coisa que varia entre um
+  grupo *experimental* e um grupo de *controle*
+- Se houver diferença acentuada entre os dois grupos, podemos
+  **inferir** que foi a variável de interesse que causou o resultado.
+
+# O detetive estatístico
+## Fumar causa câncer?
+
+Não podemos fazer esse tipo de experimento com seres humanos!
+
+Qual a alternativa?
+
+# O detetive estatístico
+## Fumar causa câncer?
+
+Estudo observacional!?
+
+- Selecionar um grupo que se formou no mesmo ano (com fumantes e não
+ fumantes)
+- Analisar a saúde dos integrantes na festa de 20 anos de formatura
+
+Qual o problema com esse tipo de estudo?
+
+# O detetive estatístico
+## Fumar causa câncer?
+
+- Fumantes e não fumantes devem ter outros aspectos de vida diferentes
+- Se os fumantes tiverem uma saúde ruim, não saberíamos se foi por causa
+  do fumo ou outros fatores
+
+Mais problemas?
+
+# O detetive estatístico
+## Fumar causa câncer?
+
+- Fumantes tem menor probabilidade de comparecer ao evento (devido a
+  problemas de saúde)
+- Fumantes podem morrer antes do encontro (definitivamente não
+  comparecerão)
+- Isso introduz um **viés** nos dados
+
+# O detetive estatístico
+
+A Estatística se aproxima muito de um trabalho de detetive.
+
+- Os dados geram pistas e padrões, que *podem* levar a conclusões
+  significativas
+- Os dados apresentam pistas desorganizadas (a cena do crime)
+- A análise estatística é o trabalho de detetive:
+    - Processar os dados brutos
+    - Obter conclusões
+
+# O detetive estatístico
+
+> A análise estatística raramente revela "a verdade". Em geral,
+> construímos um caso circunstancial baseado em dados imperfeitos.
+>
+> --- Charles Wheelan

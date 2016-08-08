@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="Fernando Mayer" />
+  <title>CE082 - Seminários</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="site_libs/reveal.js-3.3.0/css/reveal.css"/>
+
+
+
+<link rel="stylesheet" href="site_libs/reveal.js-3.3.0/css/theme/black.css" id="theme">
+
+<style type="text/css">
+.reveal section img {
+  background: rgba(255, 255, 255, 0.85);
+}
+</style>
+
+  <!-- some tweaks to reveal css -->
+  <style type="text/css">
+    .reveal h1 { font-size: 2.0em; }
+    .reveal h2 { font-size: 1.5em;  }
+    .reveal h3 { font-size: 1.25em;	}
+    .reveal h4 { font-size: 1em;	}
+
+    .reveal .slides>section,
+    .reveal .slides>section>section {
+      padding: 0px 0px;
+    }
+
+
+
+    .reveal table {
+      border-width: 1px;
+      border-spacing: 2px;
+      border-style: dotted;
+      border-color: gray;
+      border-collapse: collapse;
+      font-size: 0.7em;
+    }
+
+    .reveal table th {
+      border-width: 1px;
+      padding-left: 10px;
+      padding-right: 25px;
+      font-weight: bold;
+      border-style: dotted;
+      border-color: gray;
+    }
+
+    .reveal table td {
+      border-width: 1px;
+      padding-left: 10px;
+      padding-right: 25px;
+      border-style: dotted;
+      border-color: gray;
+    }
+
+  </style>
+
+    <style type="text/css">code{white-space: pre;}</style>
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'site_libs/reveal.js-3.3.0/css/print/pdf.css' : 'site_libs/reveal.js-3.3.0/css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+    <!--[if lt IE 9]>
+    <script src="site_libs/reveal.js-3.3.0/lib/js/html5shiv.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section>
+    <h1 class="title">CE082 - Seminários</h1>
+    <h2 class="author">Fernando Mayer</h2>
+    <h3 class="date">08 de Agosto, 2016</h3>
+</section>
+
+<section id="sobre" class="slide level1">
+<h1>Sobre</h1>
+<h2 id="formacao">Formação</h2>
+<ul>
+<li>Oceanógrafo (UNIVALI, 2005)
+<ul>
+<li>Modelos Lineares Generalizados (MLGs)</li>
+</ul></li>
+<li>Mestre em Ecologia (UFSC, 2011)
+<ul>
+<li>Modelos Lineares generalizados para dados de contagem com superdispersão e excesso de zeros</li>
+</ul></li>
+<li>Doutorado em Estatística e Experimentação Agronômica (ESALQ/USP, 2013-2018)
+<ul>
+<li>Modelos estado-espaço não lineares para a dinâmica de biomassa de estoques pesqueiros
+<ul>
+<li>Inferência bayesiana</li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section id="sobre-1" class="slide level1">
+<h1>Sobre</h1>
+<h2 id="mercado-de-trabalho">Mercado de trabalho</h2>
+<ul>
+<li>Grupo de Estudos Pesqueiros (GEP) (UNIVALI, 2005-2008): análise de dados pesqueiros (atuns e afins) e relatórios para ICCAT
+<ul>
+<li>Difusão do R, cursos</li>
+<li>MLGs</li>
+<li>“Manipulação” de bases de dados</li>
+</ul></li>
+<li>Ministério da Pesca e Aquicultura (MPA, 2010-2011): estatística pesqueira marinha do Brasil (2008 a 2010)
+<ul>
+<li>Métodos estatísticos para dados faltantes</li>
+<li>Interação com IBGE</li>
+<li>Relações políticas</li>
+</ul></li>
+</ul>
+</section>
+<section id="sobre-2" class="slide level1">
+<h1>Sobre</h1>
+<h2 id="atuacao-academica">Atuação acadêmica</h2>
+<ul>
+<li>Professor substituto ECZ/UFSC (2011-2013)
+<ul>
+<li>Recursos pesqueiros, ecologia de populações, informática aplicada</li>
+</ul></li>
+<li>Professor efetivo IMEF/FURG (2015)
+<ul>
+<li>Estatística básica</li>
+</ul></li>
+<li>Professor efetivo DEST/UFPR (2016-?)</li>
+</ul>
+</section>
+<section id="o-que-vamos-fazer-nessa-disciplina" class="slide level1">
+<h1>O que vamos fazer nessa disciplina?</h1>
+<blockquote>
+<p>“Metafilosofia” da Estatística</p>
+</blockquote>
+<ul>
+<li>História da Estatística</li>
+<li>Evolução das principais técnicas</li>
+<li>A Profissão de Estatístico</li>
+<li>Fundamentos de metodologia científica e filosofia da ciência</li>
+<li>Seminários apresentados por profissionais de diversas áreas</li>
+</ul>
+</section>
+<section id="quem-veio-aqui-por-causa-do-termo-data-science" class="slide level1">
+<h1>Quem veio aqui por causa do termo “data science”?</h1>
+</section>
+<section id="data-science-estatistica" class="slide level1">
+<h1>Data Science? Estatística?</h1>
+<p><a href="http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram">The data science Venn diagram</a></p>
+<p><img src="img/Data_Science_VD.png" alt="" /></p>
+</section>
+<section id="data-science-estatistica-1" class="slide level1">
+<h1>Data Science? Estatística?</h1>
+<ul>
+<li>Conhecimento de matemática e estatística: é o que você está fazendo aqui</li>
+<li>Habilidade hacker:
+<ul>
+<li>Saber programar</li>
+<li>Saber responder perguntas sozinho</li>
+<li>Saber usar ferramentas de busca</li>
+</ul></li>
+<li>Experiência substancial: depende da área dos dados, da interação com o pesquisador, ou de buscar o conhecimento</li>
+</ul>
+</section>
+<section id="estatistica" class="slide level1">
+<h1>Estatística</h1>
+<blockquote>
+<p>I keep saying that the sexy job in the next 10 years will be statisticians, and I’m not kidding.</p>
+<p>— Hal Varian, economista chefe do Google</p>
+</blockquote>
+<p>Lohr, S. <em>For Today’s Graduate, Just One Word: Statistics</em>. <a href="http://www.nytimes.com/2009/08/06/technology/06stats.html?_r=0">New York Times</a>, 6 ago 2009.</p>
+</section>
+<section id="o-detetive-estatistico" class="slide level1">
+<h1>O detetive estatístico</h1>
+<h2 id="fumar-causa-cancer">Fumar causa câncer?</h2>
+<p>Método científico (testar uma hipótese):</p>
+<ul>
+<li>Conduzir um experiento controlado</li>
+<li>A variável de interesse deve ser a única coisa que varia entre um grupo <em>experimental</em> e um grupo de <em>controle</em></li>
+<li>Se houver diferença acentuada entre os dois grupos, podemos <strong>inferir</strong> que foi a variável de interesse que causou o resultado.</li>
+</ul>
+</section>
+<section id="o-detetive-estatistico-1" class="slide level1">
+<h1>O detetive estatístico</h1>
+<h2 id="fumar-causa-cancer-1">Fumar causa câncer?</h2>
+<p>Não podemos fazer esse tipo de experimento com seres humanos!</p>
+<p>Qual a alternativa?</p>
+</section>
+<section id="o-detetive-estatistico-2" class="slide level1">
+<h1>O detetive estatístico</h1>
+<h2 id="fumar-causa-cancer-2">Fumar causa câncer?</h2>
+<p>Estudo observacional!?</p>
+<ul>
+<li>Selecionar um grupo que se formou no mesmo ano (com fumantes e não fumantes)</li>
+<li>Analisar a saúde dos integrantes na festa de 20 anos de formatura</li>
+</ul>
+<p>Qual o problema com esse tipo de estudo?</p>
+</section>
+<section id="o-detetive-estatistico-3" class="slide level1">
+<h1>O detetive estatístico</h1>
+<h2 id="fumar-causa-cancer-3">Fumar causa câncer?</h2>
+<ul>
+<li>Fumantes e não fumantes devem ter outros aspectos de vida diferentes</li>
+<li>Se os fumantes tiverem uma saúde ruim, não saberíamos se foi por causa do fumo ou outros fatores</li>
+</ul>
+<p>Mais problemas?</p>
+</section>
+<section id="o-detetive-estatistico-4" class="slide level1">
+<h1>O detetive estatístico</h1>
+<h2 id="fumar-causa-cancer-4">Fumar causa câncer?</h2>
+<ul>
+<li>Fumantes tem menor probabilidade de comparecer ao evento (devido a problemas de saúde)</li>
+<li>Fumantes podem morrer antes do encontro (definitivamente não comparecerão)</li>
+<li>Isso introduz um <strong>viés</strong> nos dados</li>
+</ul>
+</section>
+<section id="o-detetive-estatistico-5" class="slide level1">
+<h1>O detetive estatístico</h1>
+<p>A Estatística se aproxima muito de um trabalho de detetive.</p>
+<ul>
+<li>Os dados geram pistas e padrões, que <em>podem</em> levar a conclusões significativas</li>
+<li>Os dados apresentam pistas desorganizadas (a cena do crime)</li>
+<li>A análise estatística é o trabalho de detetive:
+<ul>
+<li>Processar os dados brutos</li>
+<li>Obter conclusões</li>
+</ul></li>
+</ul>
+</section>
+<section id="o-detetive-estatistico-6" class="slide level1">
+<h1>O detetive estatístico</h1>
+<blockquote>
+<p>A análise estatística raramente revela “a verdade”. Em geral, construímos um caso circunstancial baseado em dados imperfeitos.</p>
+<p>— Charles Wheelan</p>
+</blockquote>
+</section>
+    </div>
+  </div>
+
+  <script src="site_libs/reveal.js-3.3.0/lib/js/head.min.js"></script>
+  <script src="site_libs/reveal.js-3.3.0/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        // Display the page number of the current slide
+        slideNumber: true,
+        // Push each slide change to the browser history
+        history: true,
+        // Vertical centering of slides
+        center: true,
+        // Transition style
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+        // Transition style for full page slide backgrounds
+        backgroundTransition: 'default', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'site_libs/reveal.js-3.3.0/plugin/notes/notes.js', async: true },
+        ]
+      });
+    </script>
+  <!-- dynamically load mathjax for compatibility with self-contained -->
+  <script>
+    (function () {
+      var script = document.createElement("script");
+      script.type = "text/javascript";
+      script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+      document.getElementsByTagName("head")[0].appendChild(script);
+    })();
+  </script>
+
+<script>
+  (function() {
+    if (window.jQuery) {
+      Reveal.addEventListener( 'slidechanged', function(event) {  
+        window.jQuery(event.previousSlide).trigger('hidden');
+        window.jQuery(event.currentSlide).trigger('shown');
+      });
+    }
+  })();
+</script>
+
+
+  </body>
+</html>
