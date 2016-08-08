@@ -49,3 +49,12 @@ São Paulo: Atlas, 2010.
 - Kuhn, TS.
   [A estrutura das revoluções científicas](http://www.editoraperspectiva.com.br/index.php?apg=cat&npr=333).
   São Paulo: Perspectiva, 2011.
+
+## Referências complementares
+
+- Oakley, B.
+  [Aprendendo a aprender. Como ter sucesso em matemática, ciências ou qualquer outra matéria](http://www.infopress.com.br).
+  São Paulo: Infopress, 2015.
+- Pólya, G.
+  [How to solve it](https://www.penguin.co.uk/books/12619/how-to-solve-it).
+  London: Penguin Books, 1990.
