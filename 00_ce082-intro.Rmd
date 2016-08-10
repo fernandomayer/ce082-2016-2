@@ -1,7 +1,7 @@
 ---
 title: "CE082 - Seminários"
 author: "Fernando Mayer"
-date: "08 de Agosto, 2016"
+date: "Agosto, 2016"
 output:
   revealjs::revealjs_presentation:
     theme: black
@@ -51,9 +51,9 @@ source("setup_knitr.R")
 
 - Professor substituto ECZ/UFSC (2011-2013)
     - Recursos pesqueiros, ecologia de populações, informática aplicada
-- Professor efetivo IMEF/FURG (2015)
+- Professor efetivo IMEF/FURG (2014)
     - Estatística básica
-- Professor efetivo DEST/UFPR (2016-?)
+- Professor efetivo DEST/UFPR (2015-?)
 
 # O que vamos fazer nessa disciplina?
 
@@ -100,7 +100,7 @@ Times](http://www.nytimes.com/2009/08/06/technology/06stats.html?_r=0),
 
 Método científico (testar uma hipótese):
 
-- Conduzir um experiento controlado
+- Conduzir um experimento controlado
 - A variável de interesse deve ser a única coisa que varia entre um
   grupo *experimental* e um grupo de *controle*
 - Se houver diferença acentuada entre os dois grupos, podemos
