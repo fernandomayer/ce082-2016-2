@@ -153,6 +153,17 @@ A Estatística se aproxima muito de um trabalho de detetive.
     - Processar os dados brutos
     - Obter conclusões
 
+# Qual o objetivo?
+
+## (de estudar estatísica)
+
+- Sintetizar enormes quantidades de dados
+- Tomar decisões melhores
+- Responder a questões {sociais, ambientais, ...}
+  importantes
+- Reconhecer padrões
+- Avaliar a efetividade de políticas, drogas, inovações, ...
+
 # O detetive estatístico
 
 > A análise estatística raramente revela "a verdade". Em geral,
