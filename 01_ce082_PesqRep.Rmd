@@ -303,12 +303,11 @@ Problemas comuns:
 Por isso, a proposta de distribuir dados e códigos **documentados** de
 uma pesquisa científica, de maneira acessível e auto-contida.
 
-**Objetivos**: expor as ferramentas computacionais disponíveis no **R**
-para gerar documentos de análise (dinâmicos), auto-contidos em formato de
-pacote.
+O **R** possui ferramentas para gerar documentos de análise (dinâmicos),
+auto-contidos (em formato de pacote ou arquivos simples).
 
-Dessa forma, para reproduzir uma pesquisa é necessário apenas instalar o
-pacote no R e reproduzir as análises conforme a documentação.
+Dessa forma, para reproduzir uma pesquisa é necessário apenas executar
+um arquivo (ou instalar um pacote no R) para reproduzir uma análise.
 
 ---
 
@@ -317,12 +316,7 @@ pacote no R e reproduzir as análises conforme a documentação.
 Benefícios:
 
 - Os dados e os códigos são disponibilizados conjuntamente
-- As análises podem ser documentadas em forma de **vinhetas**, que são
-  **documentos dinâmicos**
+- As análises podem ser documentadas em forma de **documentos dinâmicos**
 - Eventuais funções que forem criadas para uma análise específica também
   já estão disponíveis
-- O padrão estrutural (rígido) de criação de pacotes do R, garante uma
-  **padronização** da maneira como a pesquisa é distribuída
-- Facilidade na **distribuição**, já que o pacote pode ser
-  disponibilizado no CRAN ou em repositórios como o Github
 - A compatibilidade das análises entre sistemas operacionais é aumentada
