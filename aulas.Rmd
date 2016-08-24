@@ -13,7 +13,10 @@ Abaixo o histórico de atividades realizadas em classe e atividades extra
 classe aplicadas.
 
 - **01/08**: Aula inaugural do curso de Estatística.
-- **08/08**: Exposição da disciplina e seminário.
+- **08/08**: [Apresentação da disciplina](00_ce082-intro.html).
+- **15/08**: Programa de Educação Tutorial (PET). Maria Helena Oliveira
+  e Prof. Walmes Marques Zeviani.
+- **22/08**: [Pesquisa reproduzível](01_ce082_PesqRep.html).
 
 ## Notas
 

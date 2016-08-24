@@ -27,8 +27,12 @@ navbar:
     - text: "Materiais"
       menu:
       - text: "Aulas"
+      - text: "Pesquisa reproduzível"
+        href: 01_ce082_PesqRep.html
       - text: "----------"
       - text: "Seminários"
+      - text: "Apresentação da disciplina"
+        href: 00_ce082-intro.html
   right:
     - text: GitHub
       icon: fa-github fa-lg
