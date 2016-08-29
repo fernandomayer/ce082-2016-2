@@ -1,95 +1,98 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta name="generator" content="pandoc">
-  <meta name="author" content="Fernando Mayer" />
   <title>Pesquisa reproduzível</title>
+
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="generator" content="pandoc" />
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="site_libs/reveal.js-3.3.0/css/reveal.css"/>
 
+  <link rel="stylesheet" media="all" href="site_libs/ioslides-13.5.1/fonts/fonts.css">
 
+  <link rel="stylesheet" media="all" href="site_libs/ioslides-13.5.1/theme/css/default.css">
+  <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="site_libs/ioslides-13.5.1/theme/css/phone.css">
 
-<link rel="stylesheet" href="site_libs/reveal.js-3.3.0/css/theme/black.css" id="theme">
+  <base target="_blank">
 
-<style type="text/css">
-.reveal section img {
-  background: rgba(255, 255, 255, 0.85);
-}
-</style>
+  <script type="text/javascript">
+    var SLIDE_CONFIG = {
+      // Slide settings
+      settings: {
+                title: 'Pesquisa reproduzível',
+                        useBuilds: true,
+        usePrettify: true,
+        enableSlideAreas: true,
+        enableTouch: true,
+                      },
 
-  <!-- some tweaks to reveal css -->
+      // Author information
+      presenters: [
+            {
+        name:  'Fernando Mayer (LEG/DEST/UFPR)' ,
+        company: '',
+        gplus: '',
+        twitter: '',
+        www: '',
+        github: ''
+      },
+            ]
+    };
+  </script>
+
   <style type="text/css">
-    .reveal h1 { font-size: 2.0em; }
-    .reveal h2 { font-size: 1.5em;  }
-    .reveal h3 { font-size: 1.25em;	}
-    .reveal h4 { font-size: 1em;	}
 
-    .reveal .slides>section,
-    .reveal .slides>section>section {
-      padding: 0px 0px;
-    }
-
-
-
-    .reveal table {
-      border-width: 1px;
-      border-spacing: 2px;
-      border-style: dotted;
-      border-color: gray;
-      border-collapse: collapse;
-      font-size: 0.7em;
-    }
-
-    .reveal table th {
-      border-width: 1px;
-      padding-left: 10px;
-      padding-right: 25px;
+    b, strong {
       font-weight: bold;
-      border-style: dotted;
-      border-color: gray;
     }
 
-    .reveal table td {
-      border-width: 1px;
-      padding-left: 10px;
-      padding-right: 25px;
-      border-style: dotted;
-      border-color: gray;
+    em {
+      font-style: italic;
+    }
+
+    slides > slide {
+      -webkit-transition: all 0.4s ease-in-out;
+      -moz-transition: all 0.4s ease-in-out;
+      -o-transition: all 0.4s ease-in-out;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .auto-fadein {
+      -webkit-transition: opacity 0.6s ease-in;
+      -webkit-transition-delay: 0.4s;
+      -moz-transition: opacity 0.6s ease-in 0.4s;
+      -o-transition: opacity 0.6s ease-in 0.4s;
+      transition: opacity 0.6s ease-in 0.4s;
+      opacity: 0;
     }
 
   </style>
 
-    <style type="text/css">code{white-space: pre;}</style>
-
-    <!-- Printing and PDF exports -->
-    <script>
-      var link = document.createElement( 'link' );
-      link.rel = 'stylesheet';
-      link.type = 'text/css';
-      link.href = window.location.search.match( /print-pdf/gi ) ? 'site_libs/reveal.js-3.3.0/css/print/pdf.css' : 'site_libs/reveal.js-3.3.0/css/print/paper.css';
-      document.getElementsByTagName( 'head' )[0].appendChild( link );
-    </script>
-    <!--[if lt IE 9]>
-    <script src="site_libs/reveal.js-3.3.0/lib/js/html5shiv.js"></script>
-    <![endif]-->
 
 </head>
-<body>
-  <div class="reveal">
-    <div class="slides">
 
-<section>
-    <h1 class="title">Pesquisa reproduzível</h1>
-    <h2 class="author">Fernando Mayer</h2>
-    <h3 class="date">Agosto, 2016</h3>
-</section>
+<body style="opacity: 0">
 
-<section class="slide level1">
+<slides>
 
-<h2 id="introducao">Introdução</h2>
+  <slide class="title-slide segue nobackground">
+        <!-- The content of this hgroup is replaced programmatically through the slide_config.json. -->
+    <hgroup class="auto-fadein">
+      <h1 data-config-title><!-- populated from slide_config.json --></h1>
+      <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
+      <p data-config-presenter><!-- populated from slide_config.json --></p>
+            <p style="margin-top: 6px; margin-left: -2px;">Agosto, 2016</p>
+          </hgroup>
+  </slide>
+
+<slide class=''><hgroup><h2>Introdução</h2></hgroup><article  id="introducao">
+
 <ul>
 <li>Evolução da tecnologia: coleta, processamento e análise com bases de dados de alta dimensão</li>
 <li>Rotinas de análise mais sofisicadas e complexas</li>
@@ -97,174 +100,176 @@
 <li>As análises, os modelos e os algoritmos que usamos atualmente são bastante complexos: difícil descrever todos os detalhes em palavras</li>
 <li>Entender o que alguém fez em uma análise de dados atualmente, requer olhar para o <em>código</em></li>
 </ul>
-</section>
-<section class="slide level1">
 
-<h2 id="the-duke-trial-saga"><em>The Duke trial saga</em></h2>
+</article></slide><slide class=''><hgroup><h2><em>The Duke trial saga</em></h2></hgroup><article  id="the-duke-trial-saga">
+
 <ul>
 <li>Anil Potti <em>et al</em>: A Genomic Strategy to Refine Prognosis in Early-Stage Non–Small-Cell Lung Cancer. <em>The New England Journal of Medicine</em>. 2006.</li>
 <li>Prever a evolução do câncer de pulmão de um paciente usando matrizes de expressão</li>
 <li>Anil Potti <em>et al</em>: Genomic signatures to guide the use of chemotherapeutics. <em>Nature Medicine</em>. 2006.</li>
-<li>Utilização de “linhas de células”, para prever a quimioterapia mais eficaz para pacientes que sofrem de câncer de pulmão, mama ou de ovário</li>
+<li>Utilização de &quot;linhas de células&quot;, para prever a quimioterapia mais eficaz para pacientes que sofrem de câncer de pulmão, mama ou de ovário</li>
 </ul>
-</section>
-<section class="slide level1">
 
-<h2 id="the-duke-trial-saga-1"><em>The Duke trial saga</em></h2>
+</article></slide><slide class=''><hgroup><h2><em>The Duke trial saga</em></h2></hgroup><article  id="the-duke-trial-saga-1">
+
 <ul>
 <li>O grupo de Duke iniciou três ensaios clínicos baseados nos trabalhos publicados.</li>
 <li>Bioestatísticos do <em>MD Anderson Cancer Centre</em> tentaram reproduzir os resultados do artigo, com a finalidade de usar a nova técnica.</li>
 <li>Foram encontradas diversas falhas como linhas de células com nomes errados, nomes e números de células inconsistentes, etc.</li>
 <li>Depois disso, uma série de investigações foram realizadas, levando a cessar os ensaios clínicos já iniciados pela Universidade.</li>
-<li>Dr. Potti pediu demissão, e depois foi descoberto que ele tinha envolvimento com empresas da área biomédica.</li>
+<li>Dr. Potti pediu demissão, e depois foi descoberto que ele tinha envolvimento com empresas da área biomédica.</li>
 </ul>
-</section>
-<section class="slide level1">
 
-<h2 id="analise-de-dados-como-arte">Análise de dados como arte</h2>
+</article></slide><slide class=''><hgroup><h2>Análise de dados como arte</h2></hgroup><article  id="analise-de-dados-como-arte">
+
 <blockquote>
 <p><em>Ciência é conhecimento que entendemos tão bem que podemos ensiná-la para um computador. Todo o resto é arte.</em></p>
 </blockquote>
+
 <blockquote>
 <p>Donald Knuth, 1974</p>
 </blockquote>
-</section>
-<section class="slide level1">
 
-<h2 id="analise-de-dados-como-arte-1">Análise de dados como arte</h2>
+</article></slide><slide class=''><hgroup><h2>Análise de dados como arte</h2></hgroup><article  id="analise-de-dados-como-arte-1">
+
 <p>O processo de análise de dados por um pesquisador pode ser comparado ao processo de criação de uma música por um músico.</p>
-<p>Os métodos já foram ensinados ao computador, cabe ao analista saber como juntar as ferramentas e aplicá-las para responder questões relevantes para a ciência e para as pessoas.</p>
-</section>
-<section class="slide level1">
 
-<h2 id="como-a-ciencia-funciona">Como a ciência funciona</h2>
+<p>Os métodos já foram ensinados ao computador, cabe ao analista saber como juntar as ferramentas e aplicá-las para responder questões relevantes para a ciência e para as pessoas.</p>
+
+</article></slide><slide class=''><hgroup><h2>Como a ciência funciona</h2></hgroup><article  id="como-a-ciencia-funciona">
+
 <blockquote>
-<p>A Ciência é um processo de aprendizado da natureza, onde ideias concorrentes sobre como funciona o mundo são medidas contra observações.</p>
+<p><em>A Ciência é um processo de aprendizado da natureza, onde ideias concorrentes sobre como funciona o mundo são medidas contra observações.</em></p>
 </blockquote>
+
 <blockquote>
 <p>Richard Feynman, 1965</p>
 </blockquote>
+
 <ul>
 <li>Descrições: incompletas</li>
 <li>Observações: incertas e imprecisas</li>
 <li>Métodos para avaliar a concordância entre as ideias e as observações = <strong>Estatística</strong> (Stigler, 1986).</li>
 </ul>
-</section>
-<section class="slide level1">
 
-<h2 id="como-a-ciencia-funciona-1">Como a ciência funciona</h2>
-<p>“Árvore de aprendizado” de Platt (1964) a partir de experimentos críticos, denominada <strong>inferência forte</strong> (<em>strong inference</em>), e que consiste das seguintes etapas:</p>
-<ol type="1">
+</article></slide><slide class=''><hgroup><h2>Como a ciência funciona</h2></hgroup><article  id="como-a-ciencia-funciona-1">
+
+<p>&quot;Árvore de aprendizado&quot; de Platt (1964) a partir de experimentos críticos, denominada <strong>inferência forte</strong> (<em>strong inference</em>), e que consiste das seguintes etapas:</p>
+
+<ol>
 <li>Conceber hipóteses alternativas.</li>
 <li>Conceber um experimento crucial (ou vários deles) com possíveis resultados alternativos, onde cada um poderá excluir, dentro do possível, uma ou mais hipóteses.</li>
 <li>Realizar o experimento de forma a obter resultados mais confiáveis possíveis.</li>
 <li>Reciclar o procedimento, criando subhipóteses ou hipóteses sequenciais para refinar as possibilidades que restam, e assim por diante.</li>
 </ol>
-</section>
-<section class="slide level1">
 
-<h2 id="como-a-ciencia-funciona-2">Como a ciência funciona</h2>
+</article></slide><slide class=''><hgroup><h2>Como a ciência funciona</h2></hgroup><article  id="como-a-ciencia-funciona-2">
+
 <p>Esta visão de Platt é naturalmente uma extensão lógica do trabalho de Popper, que revolucionou a filosofia da Ciência no século 20, ao argumentar que uma hipótese <em>não pode ser provada</em>, apenas <em>desprovada</em>.</p>
-<p>A essência do método Popperiano é “desafiar” uma hipótese repetidamente. Se a hipótese permanece válida então ela não é validada, mas adquire um certo “grau de confiança”, que na prática passa a ser tratada como verdadeira.</p>
-</section>
-<section class="slide level1">
 
-<h2 id="como-a-ciencia-funciona-3">Como a ciência funciona</h2>
-<p>Coincidindo com esta filosofia de Popper está o trabalho estatístico de <strong>Ronald Fisher</strong>, <strong>Karl Pearson</strong>, <strong>Jerzy Neyman</strong> e outros, que desenvolveram grande parte da teoria estatística atual associada à “testes de hipótese”.</p>
-</section>
-<section class="slide level1">
+<p>A essência do método Popperiano é &quot;desafiar&quot; uma hipótese repetidamente. Se a hipótese permanece válida então ela não é validada, mas adquire um certo &quot;grau de confiança&quot;, que na prática passa a ser tratada como verdadeira.</p>
 
-<h2 id="replicacao-e-reproducao-na-ciencia">Replicação e reprodução na Ciência</h2>
+</article></slide><slide class=''><hgroup><h2>Como a ciência funciona</h2></hgroup><article  id="como-a-ciencia-funciona-3">
+
+<p>Coincidindo com esta filosofia de Popper está o trabalho estatístico de <strong>Ronald Fisher</strong>, <strong>Karl Pearson</strong>, <strong>Jerzy Neyman</strong> e outros, que desenvolveram grande parte da teoria estatística atual associada à &quot;testes de hipótese&quot;.</p>
+
+</article></slide><slide class=''><hgroup><h2>Replicação e reprodução na Ciência</h2></hgroup><article  id="replicacao-e-reproducao-na-ciencia">
+
 <p>A <strong>replicação</strong> é um dos pilares fundamentais da ciência.</p>
-<p>É necessário que diversos cientistas coletem e analisem dados de forma independente, e cheguem no mesmo resultado.</p>
-<p>Se muitas pessoas diferentes chegarem à mesma conclusão de forma independente, então tendemos a pensar que a relação ou resultado provavelmente é verdadeiro (que vai de encontro com a filosofia de Popper).</p>
-</section>
-<section class="slide level1">
 
-<h2 id="replicacao-e-reproducao-na-ciencia-1">Replicação e reprodução na Ciência</h2>
+<p>É necessário que diversos cientistas coletem e analisem dados de forma independente, e cheguem no mesmo resultado.</p>
+
+<p>Se muitas pessoas diferentes chegarem à mesma conclusão de forma independente, então tendemos a pensar que a relação ou resultado provavelmente é verdadeiro (que vai de encontro com a filosofia de Popper).</p>
+
+</article></slide><slide class=''><hgroup><h2>Replicação e reprodução na Ciência</h2></hgroup><article  id="replicacao-e-reproducao-na-ciencia-1">
+
 <p>Hoje em dia, a replicação tem se tornado cada vez mais desafiadora:</p>
+
 <ul>
 <li>Estudos maiores e mais caros</li>
 <li>Disponibilidade de recursos financeiros para pesquisas cada vez mais escassa</li>
 </ul>
-</section>
-<section class="slide level1">
 
-<h2 id="replicacao-e-reproducao-na-ciencia-2">Replicação e reprodução na Ciência</h2>
+</article></slide><slide class=''><hgroup><h2>Replicação e reprodução na Ciência</h2></hgroup><article  id="replicacao-e-reproducao-na-ciencia-2">
+
 <p>Além disso, existem estudos que dificilmente podem ser replicados:</p>
+
 <ul>
 <li>Avaliação do impacto de um terremoto em um determinado local</li>
 <li>Evolução do crescimento de uma floresta</li>
 <li>Estudo clínico que acompanhou as reações de pacientes à um medicamento durante 20 anos</li>
 </ul>
-</section>
-<section class="slide level1">
 
-<h2 id="replicacao-e-reproducao-na-ciencia-3">Replicação e reprodução na Ciência</h2>
+</article></slide><slide class=''><hgroup><h2>Replicação e reprodução na Ciência</h2></hgroup><article  id="replicacao-e-reproducao-na-ciencia-3">
+
 <p>Existem muitas boas razões pelas quais não podemos replicar um estudo.</p>
+
 <p>Se replicar não é possível, então existem duas opções:</p>
+
 <ul>
 <li>Não fazer nada (não e uma opção de verdade)</li>
 <li>Reproduzir a pesquisa.</li>
 </ul>
+
 <p>A ideia é criar uma espécie de <strong>padrão mínimo</strong>, ou um <em>meio-termo</em> entre replicar um estudo e não fazer nada.</p>
-</section>
-<section class="slide level1">
 
-<h2 id="replicacao-e-reproducao-na-ciencia-4">Replicação e reprodução na Ciência</h2>
+</article></slide><slide class=''><hgroup><h2>Replicação e reprodução na Ciência</h2></hgroup><article  id="replicacao-e-reproducao-na-ciencia-4">
+
 <p>Uma parte fundamental da <strong>pesquisa reproduzível</strong> é tornar disponíveis <strong>dados</strong> e <strong>métodos computacionais</strong> (em forma de código).</p>
-<p>Se reproduzir uma análise leva à um resultado já conhecido e esperado, então qual o propósito de uma pesquisa reproduzível?</p>
-</section>
-<section class="slide level1">
 
-<h2 id="replicacao-e-reproducao-na-ciencia-5">Replicação e reprodução na Ciência</h2>
+</article></slide><slide class='segue dark nobackground level1'><hgroup class = 'auto-fadein'><h2>Se reproduzir uma análise leva à um resultado já conhecido e esperado, então qual o propósito de uma pesquisa reproduzível?</h2></hgroup><article  id="se-reproduzir-uma-analise-leva-a-um-resultado-ja-conhecido-e-esperado-entao-qual-o-proposito-de-uma-pesquisa-reproduzivel">
+
+</article></slide><slide class=''><hgroup><h2>Replicação e reprodução na Ciência</h2></hgroup><article  id="replicacao-e-reproducao-na-ciencia-5">
+
 <ul>
 <li>Validação da análise de dados</li>
 <li>Diferentes cientistas, com diferentes visões e ideias podem colaborar no sentido de continuar a pesquisa, ou sugerir outras abordagens</li>
 <li>Novas possibilidades para novas perguntas</li>
 <li>Acelerar a geração de conhecimento</li>
 </ul>
-</section>
-<section class="slide level1">
 
-<h2 id="replicacao-e-reproducao-na-ciencia-6">Replicação e reprodução na Ciência</h2>
+</article></slide><slide class=''><hgroup><h2>Replicação e reprodução na Ciência</h2></hgroup><article  id="replicacao-e-reproducao-na-ciencia-6">
+
 <ul>
 <li>A revista <em>Science</em> teve uma edição inteira dedicada à reproducibilidade.</li>
 <li><p>Muitas revistas científicas tem atualizado suas políticas de publicação, para encorajar a reproducibilidade dos artigos publicados.</p>
+
 <ul>
 <li>Biostatistics</li>
 <li><em>Public Library of Science</em> (PLoS)</li>
 </ul></li>
 </ul>
-</section>
-<section class="slide level1">
 
-<h2 id="replicacao-e-reproducao-na-ciencia-7">Replicação e reprodução na Ciência</h2>
+</article></slide><slide class=''><hgroup><h2>Replicação e reprodução na Ciência</h2></hgroup><article  id="replicacao-e-reproducao-na-ciencia-7">
+
 <p>Preocupações:</p>
+
 <ul>
 <li>Como fica a questão da propriedade intelectual?</li>
 <li>Como fica a disponibilização de dados que foram coletados com financiamento privado ou público?</li>
 <li>Até que ponto a disponibilização dos dados não irá prejudicar meus projetos futuros?</li>
 <li>Será que não posso sofrer plágio?</li>
 </ul>
-<p>Cientistas estão preocupados em fazer pesquisa reproduzível, mas mesmo na PLoS, cerca de 60% das publicações não disponibilizam dados suficientes.</p>
-</section>
-<section class="slide level1">
 
-<h2 id="elementos-da-reproducibilidade">Elementos da reproducibilidade</h2>
+<p>Cientistas estão preocupados em fazer pesquisa reproduzível, mas mesmo na PLoS, cerca de 60% das publicações não disponibilizam dados suficientes.</p>
+
+</article></slide><slide class=''><hgroup><h2>Elementos da reproducibilidade</h2></hgroup><article  id="elementos-da-reproducibilidade">
+
 <p>Quatro elementos principais:</p>
-<ol type="1">
+
+<ol>
 <li><strong>Dados</strong>: Os dados utilizados na análise devem ser disponibilizados <em>da maneira como foram analisados originalmente</em>.</li>
 <li><strong>Código</strong>: O código utilizado para produzir os resultados apresentados.</li>
 <li><strong>Documentação</strong>: Descrever o <strong>código</strong> e os <strong>dados</strong> utilizados na análise de maneira clara.</li>
 <li><strong>Distribuição</strong>: Distribuir todos esses elementos de maneira que sejam facilmente acessíveis.</li>
 </ol>
-</section>
-<section class="slide level1">
 
-<h2 id="boas-praticas-para-a-computacao-cientifica">Boas práticas para a computação científica</h2>
+</article></slide><slide class=''><hgroup><h2>Boas práticas para a computação científica</h2></hgroup><article  id="boas-praticas-para-a-computacao-cientifica">
+
 <p>Estudos recentes tem mostrado que cientistas passam cerca de 30% de seu tempo escrevendo códigos.</p>
+
 <p>No entanto, mais de 90% deles são primariamente <em>auto-didatas</em>, e portanto carecem de exposição à boas práticas de desenvolvimento de <em>software</em> como:</p>
+
 <ul>
 <li>escrever códigos de fácil manutenção</li>
 <li>usar um <em>sistema de controle de versões</em></li>
@@ -272,11 +277,10 @@
 <li>testes unitários</li>
 <li>automação de tarefas.</li>
 </ul>
-</section>
-<section class="slide level1">
 
-<h2 id="boas-praticas-para-a-computacao-cientifica-1">Boas práticas para a computação científica</h2>
-<ol type="1">
+</article></slide><slide class=''><hgroup><h2>Boas práticas para a computação científica</h2></hgroup><article  id="boas-praticas-para-a-computacao-cientifica-1">
+
+<ol>
 <li>Escreva programas para humanos, não para computadores</li>
 <li>Deixe o computador fazer o trabalho</li>
 <li>Faça alterações incrementais</li>
@@ -286,86 +290,75 @@
 <li>Documente a ideia e o propósito, não a mecânica</li>
 <li>Colabore</li>
 </ol>
-</section>
-<section class="slide level1">
 
-<h2 id="ferramentas-da-reproducibilidade">Ferramentas da reproducibilidade</h2>
+</article></slide><slide class=''><hgroup><h2>Ferramentas da reproducibilidade</h2></hgroup><article  id="ferramentas-da-reproducibilidade">
+
 <p>Publicar dados e códigos não é necessariamente uma tarefa trivial.</p>
+
 <p>Problemas comuns:</p>
+
 <ul>
-<li>Muitos autores simplesmente “colocam” arquivos na <em>web</em>.</li>
+<li>Muitos autores simplesmente &quot;colocam&quot; arquivos na <em>web</em>.</li>
 <li>Existem jornais que disponibilizam materiais suplementares, mas que sabidamente são desorganizados ou falhos.</li>
 <li>Mesmo quando dados e códigos estão disponíveis, o leitor ainda tem que baixar dados e códigos, e então tentar juntar tudo (altamente desencorajador)</li>
 <li>O leitor pode não ter os mesmos recursos computacionais que o autor.</li>
 </ul>
-</section>
-<section class="slide level1">
 
-<h2 id="ferramentas-da-reproducibilidade-1">Ferramentas da reproducibilidade</h2>
+</article></slide><slide class=''><hgroup><h2>Ferramentas da reproducibilidade</h2></hgroup><article  id="ferramentas-da-reproducibilidade-1">
+
 <p>Por isso, a proposta de distribuir dados e códigos <strong>documentados</strong> de uma pesquisa científica, de maneira acessível e auto-contida.</p>
-<p>O <strong>R</strong> possui ferramentas para gerar documentos de análise (dinâmicos), auto-contidos (em formato de pacote ou arquivos simples).</p>
-<p>Dessa forma, para reproduzir uma pesquisa é necessário apenas executar um arquivo (ou instalar um pacote no R) para reproduzir uma análise.</p>
-</section>
-<section class="slide level1">
 
-<h2 id="ferramentas-da-reproducibilidade-2">Ferramentas da reproducibilidade</h2>
+<p>O <strong>R</strong> possui ferramentas para gerar documentos de análise (dinâmicos), auto-contidos (em formato de pacote ou arquivos simples).</p>
+
+<p>Dessa forma, para reproduzir uma pesquisa é necessário apenas executar um arquivo (ou instalar um pacote no R) para reproduzir uma análise.</p>
+
+</article></slide><slide class=''><hgroup><h2>Ferramentas da reproducibilidade</h2></hgroup><article  id="ferramentas-da-reproducibilidade-2">
+
 <p>Benefícios:</p>
+
 <ul>
 <li>Os dados e os códigos são disponibilizados conjuntamente</li>
 <li>As análises podem ser documentadas em forma de <strong>documentos dinâmicos</strong></li>
 <li>Eventuais funções que forem criadas para uma análise específica também já estão disponíveis</li>
 <li>A compatibilidade das análises entre sistemas operacionais é aumentada</li>
-</ul>
-</section>
-    </div>
-  </div>
+</ul></article></slide>
 
-  <script src="site_libs/reveal.js-3.3.0/lib/js/head.min.js"></script>
-  <script src="site_libs/reveal.js-3.3.0/js/reveal.js"></script>
 
-  <script>
+  <slide class="backdrop"></slide>
 
-      // Full list of configuration options available at:
-      // https://github.com/hakimel/reveal.js#configuration
-      Reveal.initialize({
-        // Display the page number of the current slide
-        slideNumber: true,
-        // Push each slide change to the browser history
-        history: true,
-        // Vertical centering of slides
-        center: true,
-        // Transition style
-        transition: 'slide', // none/fade/slide/convex/concave/zoom
-        // Transition style for full page slide backgrounds
-        backgroundTransition: 'default', // none/fade/slide/convex/concave/zoom
+</slides>
 
-        // Optional reveal.js plugins
-        dependencies: [
-          { src: 'site_libs/reveal.js-3.3.0/plugin/notes/notes.js', async: true },
-        ]
-      });
-    </script>
-  <!-- dynamically load mathjax for compatibility with self-contained -->
-  <script>
-    (function () {
-      var script = document.createElement("script");
-      script.type = "text/javascript";
-      script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
-      document.getElementsByTagName("head")[0].appendChild(script);
-    })();
-  </script>
+<script src="site_libs/ioslides-13.5.1/js/modernizr.custom.45394.js"></script>
+<script src="site_libs/ioslides-13.5.1/js/prettify/prettify.js"></script>
+<script src="site_libs/ioslides-13.5.1/js/prettify/lang-r.js"></script>
+<script src="site_libs/ioslides-13.5.1/js/prettify/lang-yaml.js"></script>
+<script src="site_libs/ioslides-13.5.1/js/hammer.js"></script>
+<script src="site_libs/ioslides-13.5.1/js/slide-controller.js"></script>
+<script src="site_libs/ioslides-13.5.1/js/slide-deck.js"></script>
 
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+<!-- map slide visiblity events into shiny -->
 <script>
   (function() {
     if (window.jQuery) {
-      Reveal.addEventListener( 'slidechanged', function(event) {  
-        window.jQuery(event.previousSlide).trigger('hidden');
-        window.jQuery(event.currentSlide).trigger('shown');
+       window.jQuery(document).on('slideleave', function(e) {
+         window.jQuery(e.target).trigger('hidden');
+      });
+       window.jQuery(document).on('slideenter', function(e) {
+         window.jQuery(e.target).trigger('shown');
       });
     }
   })();
 </script>
 
-
-  </body>
+</body>
 </html>

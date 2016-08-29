@@ -1,17 +1,8 @@
 ---
 title: "Pesquisa reproduzível"
-author: "Fernando Mayer"
+author: "Fernando Mayer (LEG/DEST/UFPR)"
 date: "Agosto, 2016"
-output:
-  revealjs::revealjs_presentation:
-    theme: black
-    transition: slide
-    slide_level: 1
-    center: true
-    self_contained: false
-    reveal_plugins: "notes"
-    reveal_options:
-      slideNumber: true
+output: ioslides_presentation
 ---
 
 ```{r setup, include=FALSE}
@@ -30,8 +21,6 @@ source("setup_knitr.R")
 - Entender o que alguém fez em uma análise de dados atualmente, requer
   olhar para o *código*
 
----
-
 ## *The Duke trial saga*
 
 - Anil Potti *et al*: A Genomic Strategy to Refine Prognosis in
@@ -44,8 +33,6 @@ source("setup_knitr.R")
 - Utilização de "linhas de células", para prever a quimioterapia mais
   eficaz para pacientes que sofrem de câncer de pulmão, mama ou de
   ovário
-
----
 
 ## *The Duke trial saga*
 
@@ -60,16 +47,12 @@ source("setup_knitr.R")
 - Dr. Potti pediu demissão, e depois foi descoberto que ele tinha
   envolvimento com empresas da área biomédica.
 
----
-
 ## Análise de dados como arte
 
 > *Ciência é conhecimento que entendemos tão bem que podemos ensiná-la
 > para um computador. Todo o resto é arte.*
 
 > Donald Knuth, 1974
-
----
 
 ## Análise de dados como arte
 
@@ -80,13 +63,11 @@ Os métodos já foram ensinados ao computador, cabe ao analista saber como
 juntar as ferramentas e aplicá-las para responder questões relevantes
 para a ciência e para as pessoas.
 
----
-
 ## Como a ciência funciona
 
-> A Ciência é um processo de aprendizado da natureza, onde ideias
+> *A Ciência é um processo de aprendizado da natureza, onde ideias
 > concorrentes sobre como funciona o mundo são medidas contra
-> observações.
+> observações.*
 
 > Richard Feynman, 1965
 
@@ -94,8 +75,6 @@ para a ciência e para as pessoas.
 - Observações: incertas e imprecisas
 - Métodos para avaliar a concordância entre as ideias e as observações =
   **Estatística** (Stigler, 1986).
-
----
 
 ## Como a ciência funciona
 
@@ -113,8 +92,6 @@ consiste das seguintes etapas:
    sequenciais para refinar as possibilidades que restam, e assim por
    diante.
 
----
-
 ## Como a ciência funciona
 
 Esta visão de Platt é naturalmente uma extensão lógica do trabalho de
@@ -126,16 +103,12 @@ Se a hipótese permanece válida então ela não é validada, mas adquire um
 certo "grau de confiança", que na prática passa a ser tratada como
 verdadeira.
 
----
-
 ## Como a ciência funciona
 
 Coincidindo com esta filosofia de Popper está o trabalho
 estatístico de **Ronald Fisher**, **Karl Pearson**, **Jerzy Neyman** e
 outros, que desenvolveram grande parte da teoria estatística atual
 associada à "testes de hipótese".
-
----
 
 ## Replicação e reprodução na Ciência
 
@@ -149,8 +122,6 @@ independente, então tendemos a pensar que a relação ou resultado
 provavelmente é verdadeiro (que vai de encontro com a filosofia de
 Popper).
 
----
-
 ## Replicação e reprodução na Ciência
 
 Hoje em dia, a replicação tem se tornado cada vez mais desafiadora:
@@ -158,8 +129,6 @@ Hoje em dia, a replicação tem se tornado cada vez mais desafiadora:
 - Estudos maiores e mais caros
 - Disponibilidade de recursos financeiros para pesquisas cada vez mais
   escassa
-
----
 
 ## Replicação e reprodução na Ciência
 
@@ -169,8 +138,6 @@ Além disso, existem estudos que dificilmente podem ser replicados:
 - Evolução do crescimento de uma floresta
 - Estudo clínico que acompanhou as reações de pacientes à um medicamento
   durante 20 anos
-
----
 
 ## Replicação e reprodução na Ciência
 
@@ -184,17 +151,12 @@ Se replicar não é possível, então existem duas opções:
 A ideia é criar uma espécie de **padrão mínimo**, ou um *meio-termo*
 entre replicar um estudo e não fazer nada.
 
----
-
 ## Replicação e reprodução na Ciência
 
 Uma parte fundamental da **pesquisa reproduzível** é tornar disponíveis
 **dados** e **métodos computacionais** (em forma de código).
 
-Se reproduzir uma análise leva à um resultado já conhecido e esperado,
-então qual o propósito de uma pesquisa reproduzível?
-
----
+# Se reproduzir uma análise leva à um resultado já conhecido e esperado, então qual o propósito de uma pesquisa reproduzível?
 
 ## Replicação e reprodução na Ciência
 
@@ -203,8 +165,6 @@ então qual o propósito de uma pesquisa reproduzível?
   no sentido de continuar a pesquisa, ou sugerir outras abordagens
 - Novas possibilidades para novas perguntas
 - Acelerar a geração de conhecimento
-
----
 
 ## Replicação e reprodução na Ciência
 
@@ -215,8 +175,6 @@ então qual o propósito de uma pesquisa reproduzível?
 
     - Biostatistics
     - *Public Library of Science* (PLoS)
-
----
 
 ## Replicação e reprodução na Ciência
 
@@ -234,8 +192,6 @@ Cientistas estão preocupados em fazer pesquisa reproduzível, mas mesmo
 na PLoS, cerca de 60% das publicações não disponibilizam dados
 suficientes.
 
----
-
 ## Elementos da reproducibilidade
 
 Quatro elementos principais:
@@ -248,8 +204,6 @@ Quatro elementos principais:
    análise de maneira clara.
 4. **Distribuição**: Distribuir todos esses elementos de maneira que
    sejam facilmente acessíveis.
-
----
 
 ## Boas práticas para a computação científica
 
@@ -266,8 +220,6 @@ como:
 - testes unitários
 - automação de tarefas.
 
----
-
 ## Boas práticas para a computação científica
 
 1. Escreva programas para humanos, não para computadores
@@ -278,8 +230,6 @@ como:
 6. Otimize código apenas depois que ele funcionar
 7. Documente a ideia e o propósito, não a mecânica
 8. Colabore
-
----
 
 ## Ferramentas da reproducibilidade
 
@@ -296,8 +246,6 @@ Problemas comuns:
 - O leitor pode não ter os mesmos recursos computacionais que o
   autor.
 
----
-
 ## Ferramentas da reproducibilidade
 
 Por isso, a proposta de distribuir dados e códigos **documentados** de
@@ -308,8 +256,6 @@ auto-contidos (em formato de pacote ou arquivos simples).
 
 Dessa forma, para reproduzir uma pesquisa é necessário apenas executar
 um arquivo (ou instalar um pacote no R) para reproduzir uma análise.
-
----
 
 ## Ferramentas da reproducibilidade
 
