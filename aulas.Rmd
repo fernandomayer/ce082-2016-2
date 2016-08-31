@@ -18,7 +18,29 @@ classe aplicadas.
   e Prof. Walmes Marques Zeviani.
 - **22/08**: [Pesquisa reproduzível](01_ce082_PesqRep.html) Parte 1.
 - **29/08**: [Pesquisa reproduzível](01_ce082_PesqRep.html) Parte 2.
+- **05/09**:
+- **12/09**:
+- **19/09**:
+- **26/09**:
+- **03/10**:
+- **10/10**:
+- **17/10**:
+- **24/10**:
+- **31/10**:
+- **07/11**:
+- **14/11**:
+- **21/11**:
+- **28/11**:
+- **05/12**:
 
+```{r, eval=FALSE, include=FALSE}
+## Gera a lista com as datas de todas as aulas. O resultado do último
+## comando pode ser copiado direto para o documento
+datas <- seq.Date(as.Date("2016-09-05"), as.Date("2016-12-05"),
+                  by = "week")
+datas <- format.Date(datas, format = "%d/%m")
+cat(paste0("- **", datas, "**:\n"))
+```
 
 ## Notas
 
