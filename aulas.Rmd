@@ -18,15 +18,15 @@ classe aplicadas.
   e Prof. Walmes Marques Zeviani.
 - **22/08**: [Pesquisa reproduzível](01_ce082_PesqRep.html) Parte 1.
 - **29/08**: [Pesquisa reproduzível](01_ce082_PesqRep.html) Parte 2.
-- **05/09**:
+- **05/09**: Elias T. Krainski (LEG/UFPR)
 - **12/09**:
 - **19/09**:
 - **26/09**:
 - **03/10**:
 - **10/10**:
 - **17/10**:
-- **24/10**:
-- **31/10**:
+- **24/10**: Leonardo Sandrini Neto (CEM/UFPR)
+- **31/10**: Maikon Di Domenico (CEM/UFPR)
 - **07/11**:
 - **14/11**:
 - **21/11**:
