@@ -18,9 +18,12 @@ classe aplicadas.
   e Prof. Walmes Marques Zeviani.
 - **22/08**: [Pesquisa reproduzível](01_ce082_PesqRep.html) Parte 1.
 - **29/08**: [Pesquisa reproduzível](01_ce082_PesqRep.html) Parte 2.
-- **05/09**: Elias T. Krainski (LEG/UFPR)
+- **05/09**: Seminário com Prof. [Elias T. Krainski](http://leg.ufpr.br/~elias) (LEG/UFPR)
 - **12/09**:
-- **19/09**:
+- **19/09**: Seminário com
+  Profa.
+  [Fernanda Bührer Rizzato](http://www.leg.ufpr.br/doku.php/pessoais:fernanda) e
+  Prof. [Cesar Augusto Taconeli](http://www.leg.ufpr.br/doku.php/pessoais:taconeli)
 - **26/09**:
 - **03/10**:
 - **10/10**:
