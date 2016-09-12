@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>Seminários: como mentir com estatística</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-38898840-6', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<link rel="stylesheet"
+      href="site_libs/highlight/default.css"
+      type="text/css" />
+<script src="site_libs/highlight/highlight.js"></script>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs && document.readyState && document.readyState === "complete") {
+   window.setTimeout(function() {
+      hljs.initHighlighting();
+   }, 0);
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+
+.section h2 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h3 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h4 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h5 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h6 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+<style type="text/css">
+.code-folding-btn { margin-bottom: 4px; }
+</style>
+<script src="site_libs/navigation-1.1/codefolding.js"></script>
+<script>
+$(document).ready(function () {
+  window.initializeCodeFolding("show" === "show");
+});
+</script>
+
+
+
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3,h4",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = false;
+    options.smoothScroll = false;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.9em;
+  padding-left: 5px;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+.tocify-subheader {
+  display: inline;
+}
+.tocify-subheader .tocify-item {
+  font-size: 0.95em;
+  padding-left: 10px;
+}
+
+</style>
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">CE082</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Home</a>
+</li>
+<li>
+  <a href="aulas.html">Aulas</a>
+</li>
+<li>
+  <a href="referencias.html">Referências</a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Materiais
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li class="dropdown-header">Aulas</li>
+    <li>
+      <a href="01_ce082_PesqRep.html">Pesquisa reproduzível</a>
+    </li>
+    <li class="divider"></li>
+    <li class="dropdown-header">Seminários</li>
+    <li>
+      <a href="00_ce082-intro.html">Apresentação da disciplina</a>
+    </li>
+  </ul>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="https://github.com/fernandomayer">
+    <span class="fa fa-github fa-lg"></span>
+     
+    GitHub
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+<div class="btn-group pull-right">
+<button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Code</span> <span class="caret"></span></button>
+<ul class="dropdown-menu" style="min-width: 50px;">
+<li><a id="rmd-show-all-code" href="#">Show All Code</a></li>
+<li><a id="rmd-hide-all-code" href="#">Hide All Code</a></li>
+</ul>
+</div>
+
+
+
+<h1 class="title toc-ignore">Seminários: como mentir com estatística</h1>
+
+</div>
+
+
+<div id="introducao" class="section level1">
+<h1>Introdução</h1>
+<p>Seminário é uma técnica de estudo que inclui <strong>pesquisa</strong>, <strong>discussão</strong> e <strong>debate</strong>. Sua finalidade é <strong>pesquisar e ensinar a pesquisar</strong>, e visa mais a <em>formação</em> do que a <em>informação</em>. Essa técnica desenvolve não só a capacidade de pesquisa, de análise sistemática de fatos, mas também o hábito do <strong>raciocínio</strong> e a <strong>capacidade de síntese</strong>.</p>
+<p>Um seminário não pode ser apenas a reprodução de um tema. É necessário raciocinar (aprender) sobre o tema, sintetizar as principais ideias, e expor de maneira lógica e ordenada. A finalidade do seminário é expor ideias de maneira que todos na audiência entendam, e o processo para se chegar nesse resultado final também faz parte do aprendizado.</p>
+</div>
+<div id="tema" class="section level1">
+<h1>Tema</h1>
+<p>O tema deste seminário será o livro <a href="http://www.intrinseca.com.br/livro/624/">Como mentir com estatística</a> de Darrell Huff. Cada um dos 10 capítulos do livro será o tema de seminário de um grupo.</p>
+</div>
+<div id="grupos" class="section level1">
+<h1>Grupos</h1>
+<p>Com 43 alunos, haverão 7 grupos com 4 integrantes, e 3 grupos com 5 integrantes.</p>
+<p>Cada grupo deverá escolher:</p>
+<ul>
+<li><strong>Organizador</strong>: responsável por gerenciar as atividades do grupo. Faz parte de suas atribuições marcar os encontros, coordenar o material do seminário, e, de preferência, designar os trabalhos a cada componente.</li>
+<li><strong>Relator(es)</strong>: é aquele que apresenta o seminário. Pode ser uma só pessoa, duas ou mais (até o máximo de membros do grupo). Apesar da figura do relator, a responsabilidade pelo execução, apresentação e conteúdo do seminário é de responsabilidade de todos do grupo.</li>
+</ul>
+<p>Além disso, cada grupo terá um “grupo comentador”, ou seja, outro grupo que terá a tarefa de comentar, de maneira crítica e construtiva, sobre o seminário apresentado. Os membros do gupo comentador também deverão ler com antecedência o capítulo do livro do grupo que estará avaliando.</p>
+<p>Os grupos são os seguintes:</p>
+<ul>
+<li>G1:</li>
+<li>G2:</li>
+<li>G3:</li>
+<li>G4:</li>
+<li>G5:</li>
+<li>G6:</li>
+<li>G7:</li>
+<li>G8:</li>
+<li>G9:</li>
+<li>G10:</li>
+</ul>
+<p>O capítulo do livro atribuído para cada grupo será sorteado da seguinte forma:</p>
+<pre class="r"><code>grupo &lt;- paste0(&quot;G&quot;, 1:10)
+set.seed(1)
+caps &lt;- paste0(&quot;cap&quot;, 1:10)
+caps &lt;- sample(caps)</code></pre>
+<p>Os grupos comentadores serão sorteados com:</p>
+<pre class="r"><code>set.seed(1)
+gc &lt;- sample(grupo)</code></pre>
+<p>Dessa forma, a tabela final com os grupos, capítulos e grupos comentadores está abaixo:</p>
+<pre class="r"><code>da &lt;- data.frame(Grupo = grupo,
+                 Capítulo = caps,
+                 Grupo_comentador = gc)
+kable(da)</code></pre>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Grupo</th>
+<th align="left">Capítulo</th>
+<th align="left">Grupo_comentador</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">G1</td>
+<td align="left">cap3</td>
+<td align="left">G3</td>
+</tr>
+<tr class="even">
+<td align="left">G2</td>
+<td align="left">cap4</td>
+<td align="left">G4</td>
+</tr>
+<tr class="odd">
+<td align="left">G3</td>
+<td align="left">cap5</td>
+<td align="left">G5</td>
+</tr>
+<tr class="even">
+<td align="left">G4</td>
+<td align="left">cap7</td>
+<td align="left">G7</td>
+</tr>
+<tr class="odd">
+<td align="left">G5</td>
+<td align="left">cap2</td>
+<td align="left">G2</td>
+</tr>
+<tr class="even">
+<td align="left">G6</td>
+<td align="left">cap8</td>
+<td align="left">G8</td>
+</tr>
+<tr class="odd">
+<td align="left">G7</td>
+<td align="left">cap9</td>
+<td align="left">G9</td>
+</tr>
+<tr class="even">
+<td align="left">G8</td>
+<td align="left">cap6</td>
+<td align="left">G6</td>
+</tr>
+<tr class="odd">
+<td align="left">G9</td>
+<td align="left">cap10</td>
+<td align="left">G10</td>
+</tr>
+<tr class="even">
+<td align="left">G10</td>
+<td align="left">cap1</td>
+<td align="left">G1</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="roteiro" class="section level1">
+<h1>Roteiro</h1>
+<p>O roteiro para o seminário é uma forma de “organizar as ideias” para a apresentação em si.</p>
+<p>O roteiro deverá conter os principais tópicos, em sequência, do que se espera para a apresentação. Deve ser de no máximo uma página, e não pode ser um mero resumo ou síntese dos tópicos (se houver) de cada capítulo.</p>
+<p>O roteiro deverá ser entregue <strong>uma semana antes da apresentação</strong> para o professor e para cada membro do grupo comentador.</p>
+<p>Modificações no roteiro podem ser feitas até a data da apresentação, desde que sejam entregues novos roteiros e comunicado no início da apresentação.</p>
+</div>
+<div id="etapas-e-conteudo" class="section level1">
+<h1>Etapas e conteúdo</h1>
+<p>Para o desenvolvimento do seminário sugere-se seguir as seguintes etapas:</p>
+<ul>
+<li>Determinar o tema central, que como um “fio condutor”, estabelece a ordenação da apresentação</li>
+<li>Divisão do tema central em tópicos</li>
+<li>Síntese das ideias do autor em cada tópico</li>
+</ul>
+<p>O <strong>conteúdo</strong> da apresentação deve (<em>obrigatoriamente</em>) seguir esta apresentação:</p>
+<ul>
+<li><strong>Roteiro</strong> (ou plano do seminário): a síntese (em tópicos) daquilo que irá ser apresentado, para que a platéia possa se familiarizar antecipadamente com a apresentação</li>
+<li><strong>Introdução</strong>: deve-se expor o tema, utilizando linguagem <strong>pessoal</strong> na apresentação da proposição central.</li>
+<li><strong>Conteúdo</strong>: é a exposição das ideias do autor. Deve seguir as seguintes regras:
+<ul>
+<li>Deve ser apresentado dividido em unidades, com linguagem objetiva e concisa, evitando maiores detalhes.</li>
+<li>A transcrição de trechos só deve ser feita quando extremamente necessária.</li>
+<li>Deve-se evitar a reprodução de títulos e sub-títulos do texto consultado.</li>
+</ul></li>
+<li><strong>Conclusão</strong>: deve-se fazer uma interpretação pessoal (do grupo) sobre as ideias do autor.</li>
+<li><strong>Grupo</strong>: listar os membros do grupo e a contribuição de cada um para o seminário.</li>
+</ul>
+</div>
+<div id="avaliacao" class="section level1">
+<h1>Avaliação</h1>
+<p>Os critérios a seguir deverão ser levados em conta na avaliação do professor, mas também devem ser utilizados pelos membros dos grupos comentadores e demais participantes do seminário.</p>
+<ol style="list-style-type: decimal">
+<li>Sobre o procedimento na elaboração do seminário
+<ul>
+<li>Exatidão com o tema proposto</li>
+<li>Planejamento:
+<ul>
+<li>Sequência de desenvolvimento</li>
+<li>Adequação do roteiro com a apresentação</li>
+</ul></li>
+<li>Adequação do tema ao tempo disponível</li>
+</ul></li>
+<li>Sobre a exposição oral
+<ul>
+<li>Qualidade da exposição
+<ul>
+<li>Controle</li>
+<li>Voz e vocabulário</li>
+<li>Relacionamento com a classe</li>
+</ul></li>
+<li>Qualidade e quantidade de slides</li>
+</ul></li>
+</ol>
+</div>
+<div id="duracao" class="section level1">
+<h1>Duração</h1>
+<p>Cada grupo terá 15 minutos para fazer a exposição oral. Posteriormente, o grupo comentador e os demais alunos terão 5 minutos para fazerem comentários, perguntas ou sugestões.</p>
+</div>
+<div id="datas" class="section level1">
+<h1>Datas</h1>
+<p>Considerando 20 minutos de apresentação e discussão, serão apresentados 4 seminários (grupos) por aula, com início dia 26/09.</p>
+<p>O sorteio das datas e horários para cada grupo está abaixo:</p>
+<pre class="r"><code>## Cria as datas
+datas &lt;- c(as.Date(&quot;2016-09-26&quot;),
+           as.Date(&quot;2016-10-03&quot;),
+           as.Date(&quot;2016-10-10&quot;))
+
+## Cria as horas
+horas &lt;- seq(as.POSIXct(&quot;2016-09-26 20:40&quot;),
+             as.POSIXct(&quot;2016-09-26 22:00&quot;),
+             length = 5)[1:4]
+horas &lt;- format(horas, &quot;%H:%M&quot;)
+
+## Sorteio dos grupos para os três dias
+set.seed(1)
+d1 &lt;- sample(grupo, size = 4)
+d2 &lt;- sample(grupo[-which(grupo %in% d1)], size = 4)
+d3 &lt;- sample(grupo[-which(grupo %in% c(d1, d2))], size = 2)
+
+db &lt;- data.frame(Data = rep(datas, each = 4),
+                 Hora = horas,
+                 Grupo = c(d1, d2, d3, NA, NA))
+kable(db)</code></pre>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Data</th>
+<th align="left">Hora</th>
+<th align="left">Grupo</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">2016-09-26</td>
+<td align="left">20:40</td>
+<td align="left">G3</td>
+</tr>
+<tr class="even">
+<td align="left">2016-09-26</td>
+<td align="left">21:00</td>
+<td align="left">G4</td>
+</tr>
+<tr class="odd">
+<td align="left">2016-09-26</td>
+<td align="left">21:20</td>
+<td align="left">G5</td>
+</tr>
+<tr class="even">
+<td align="left">2016-09-26</td>
+<td align="left">21:40</td>
+<td align="left">G7</td>
+</tr>
+<tr class="odd">
+<td align="left">2016-10-03</td>
+<td align="left">20:40</td>
+<td align="left">G2</td>
+</tr>
+<tr class="even">
+<td align="left">2016-10-03</td>
+<td align="left">21:00</td>
+<td align="left">G9</td>
+</tr>
+<tr class="odd">
+<td align="left">2016-10-03</td>
+<td align="left">21:20</td>
+<td align="left">G8</td>
+</tr>
+<tr class="even">
+<td align="left">2016-10-03</td>
+<td align="left">21:40</td>
+<td align="left">G10</td>
+</tr>
+<tr class="odd">
+<td align="left">2016-10-10</td>
+<td align="left">20:40</td>
+<td align="left">G6</td>
+</tr>
+<tr class="even">
+<td align="left">2016-10-10</td>
+<td align="left">21:00</td>
+<td align="left">G1</td>
+</tr>
+<tr class="odd">
+<td align="left">2016-10-10</td>
+<td align="left">21:20</td>
+<td align="left">NA</td>
+</tr>
+<tr class="even">
+<td align="left">2016-10-10</td>
+<td align="left">21:40</td>
+<td align="left">NA</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<center>
+  <hr width="100%" size="3px">
+  <p> <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.pt_BR">
+      <img src="img/CC_by-nc-sa_80x15.png" alt="Licença Creative Commons 4.0"> </a>
+  </p>
+  <p> <font size="2"> Este conteúdo
+      está disponível por meio da Licença Creative Commons 4.0 </font>
+  </p>
+</center>
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+$(document).ready(function () {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
