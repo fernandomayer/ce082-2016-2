@@ -60,8 +60,8 @@ Os grupos são os seguintes:
 - G6: Ariel (org), Allan, Fábio, Rafael M., Jayme
 - G7: Luka (org), Paulo, Luan, Moisés
 - G8: Alisson (org), Denis, Rodrigo, Jean
-- G9:
-- G10:
+- G9: Guilherme S. (org), Guilherme C., Lazaro S., Marcio Jr.
+- G10: Mirkon G. (org), Moizes P., Thiago A., William B.
 
 O capítulo do livro atribuído para cada grupo será sorteado da seguinte
 forma:
@@ -87,11 +87,13 @@ comentadores está abaixo:
 da <- data.frame(Grupo = grupo,
                  Capítulo = caps,
                  Grupo_comentador = gc)
-dados <- data.frame(Grupo = grupo,
-                    Capítulo = caps,
-                    Grupo_comentador = gc)
 kable(da)
 ```
+
+**Observação**: o grupo comentador é o grupo que irá comentar sobre o
+seminário do grupo apresentador. Por exemplo, o G4 será o grupo
+comentador do seminário do G1, o G6 será o grupo comentador do G2, e
+assim por diante.
 
 # Roteiro
 

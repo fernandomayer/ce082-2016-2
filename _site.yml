@@ -33,6 +33,8 @@ navbar:
       - text: "Seminários"
       - text: "Apresentação da disciplina"
         href: 00_ce082-intro.html
+      - text: "Como mentir com estatística"
+        href: 02_sem_CME.html
   right:
     - text: GitHub
       icon: fa-github fa-lg

@@ -326,6 +326,9 @@ div.tocify {
     <li>
       <a href="00_ce082-intro.html">Apresentação da disciplina</a>
     </li>
+    <li>
+      <a href="02_sem_CME.html">Como mentir com estatística</a>
+    </li>
   </ul>
 </li>
       </ul>
@@ -387,8 +390,8 @@ div.tocify {
 <li>G6: Ariel (org), Allan, Fábio, Rafael M., Jayme</li>
 <li>G7: Luka (org), Paulo, Luan, Moisés</li>
 <li>G8: Alisson (org), Denis, Rodrigo, Jean</li>
-<li>G9:</li>
-<li>G10:</li>
+<li>G9: Guilherme S. (org), Guilherme C., Lazaro S., Marcio Jr.</li>
+<li>G10: Mirkon G. (org), Moizes P., Thiago A., William B.</li>
 </ul>
 <p>O capítulo do livro atribuído para cada grupo será sorteado da seguinte forma:</p>
 <pre class="r"><code>grupo &lt;- paste0(&quot;G&quot;, 1:10)
@@ -402,9 +405,6 @@ gc &lt;- sample(grupo)</code></pre>
 <pre class="r"><code>da &lt;- data.frame(Grupo = grupo,
                  Capítulo = caps,
                  Grupo_comentador = gc)
-dados &lt;- data.frame(Grupo = grupo,
-                    Capítulo = caps,
-                    Grupo_comentador = gc)
 kable(da)</code></pre>
 <table>
 <thead>
@@ -467,6 +467,7 @@ kable(da)</code></pre>
 </tr>
 </tbody>
 </table>
+<p><strong>Observação</strong>: o grupo comentador é o grupo que irá comentar sobre o seminário do grupo apresentador. Por exemplo, o G4 será o grupo comentador do seminário do G1, o G6 será o grupo comentador do G2, e assim por diante.</p>
 </div>
 <div id="roteiro" class="section level1">
 <h1>Roteiro</h1>
