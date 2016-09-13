@@ -52,14 +52,14 @@ com antecedência o capítulo do livro do grupo que estará avaliando.
 
 Os grupos são os seguintes:
 
-- G1:
-- G2:
-- G3:
-- G4:
-- G5:
-- G6:
-- G7:
-- G8:
+- G1: Arthur (org), Rafael S., Wagner C., Davi P., Wagner R.
+- G2: Igor (org), Vanessa, Roger, Junot, Luan
+- G3: Luciana (org), Bianca, Rafael M., Letícia, Andressa
+- G4: Caroline (org), Carla, Gustavo, Pedro
+- G5: Wagner (org), Cristian, Eduardo, Ana Flavia, Guilherme
+- G6: Ariel (org), Allan, Fábio, Rafael M., Jayme
+- G7: Luka (org), Paulo, Luan, Moisés
+- G8: Alisson (org), Denis, Rodrigo, Jean
 - G9:
 - G10:
 
@@ -68,7 +68,7 @@ forma:
 
 ```{r}
 grupo <- paste0("G", 1:10)
-set.seed(1)
+set.seed(0811)
 caps <- paste0("cap", 1:10)
 caps <- sample(caps)
 ```
@@ -76,7 +76,7 @@ caps <- sample(caps)
 Os grupos comentadores serão sorteados com:
 
 ```{r}
-set.seed(1)
+set.seed(2504)
 gc <- sample(grupo)
 ```
 
@@ -87,6 +87,9 @@ comentadores está abaixo:
 da <- data.frame(Grupo = grupo,
                  Capítulo = caps,
                  Grupo_comentador = gc)
+dados <- data.frame(Grupo = grupo,
+                    Capítulo = caps,
+                    Grupo_comentador = gc)
 kable(da)
 ```
 
@@ -182,7 +185,7 @@ horas <- seq(as.POSIXct("2016-09-26 20:40"),
 horas <- format(horas, "%H:%M")
 
 ## Sorteio dos grupos para os três dias
-set.seed(1)
+set.seed(2707)
 d1 <- sample(grupo, size = 4)
 d2 <- sample(grupo[-which(grupo %in% d1)], size = 4)
 d3 <- sample(grupo[-which(grupo %in% c(d1, d2))], size = 2)

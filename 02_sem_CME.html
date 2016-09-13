@@ -379,29 +379,32 @@ div.tocify {
 <p>Além disso, cada grupo terá um “grupo comentador”, ou seja, outro grupo que terá a tarefa de comentar, de maneira crítica e construtiva, sobre o seminário apresentado. Os membros do gupo comentador também deverão ler com antecedência o capítulo do livro do grupo que estará avaliando.</p>
 <p>Os grupos são os seguintes:</p>
 <ul>
-<li>G1:</li>
-<li>G2:</li>
-<li>G3:</li>
-<li>G4:</li>
-<li>G5:</li>
-<li>G6:</li>
-<li>G7:</li>
-<li>G8:</li>
+<li>G1: Arthur (org), Rafael S., Wagner C., Davi P., Wagner R.</li>
+<li>G2: Igor (org), Vanessa, Roger, Junot, Luan</li>
+<li>G3: Luciana (org), Bianca, Rafael M., Letícia, Andressa</li>
+<li>G4: Caroline (org), Carla, Gustavo, Pedro</li>
+<li>G5: Wagner (org), Cristian, Eduardo, Ana Flavia, Guilherme</li>
+<li>G6: Ariel (org), Allan, Fábio, Rafael M., Jayme</li>
+<li>G7: Luka (org), Paulo, Luan, Moisés</li>
+<li>G8: Alisson (org), Denis, Rodrigo, Jean</li>
 <li>G9:</li>
 <li>G10:</li>
 </ul>
 <p>O capítulo do livro atribuído para cada grupo será sorteado da seguinte forma:</p>
 <pre class="r"><code>grupo &lt;- paste0(&quot;G&quot;, 1:10)
-set.seed(1)
+set.seed(0811)
 caps &lt;- paste0(&quot;cap&quot;, 1:10)
 caps &lt;- sample(caps)</code></pre>
 <p>Os grupos comentadores serão sorteados com:</p>
-<pre class="r"><code>set.seed(1)
+<pre class="r"><code>set.seed(2504)
 gc &lt;- sample(grupo)</code></pre>
 <p>Dessa forma, a tabela final com os grupos, capítulos e grupos comentadores está abaixo:</p>
 <pre class="r"><code>da &lt;- data.frame(Grupo = grupo,
                  Capítulo = caps,
                  Grupo_comentador = gc)
+dados &lt;- data.frame(Grupo = grupo,
+                    Capítulo = caps,
+                    Grupo_comentador = gc)
 kable(da)</code></pre>
 <table>
 <thead>
@@ -414,53 +417,53 @@ kable(da)</code></pre>
 <tbody>
 <tr class="odd">
 <td align="left">G1</td>
-<td align="left">cap3</td>
-<td align="left">G3</td>
-</tr>
-<tr class="even">
-<td align="left">G2</td>
-<td align="left">cap4</td>
-<td align="left">G4</td>
-</tr>
-<tr class="odd">
-<td align="left">G3</td>
 <td align="left">cap5</td>
-<td align="left">G5</td>
+<td align="left">G4</td>
+</tr>
+<tr class="even">
+<td align="left">G2</td>
+<td align="left">cap3</td>
+<td align="left">G6</td>
+</tr>
+<tr class="odd">
+<td align="left">G3</td>
+<td align="left">cap8</td>
+<td align="left">G10</td>
 </tr>
 <tr class="even">
 <td align="left">G4</td>
-<td align="left">cap7</td>
-<td align="left">G7</td>
+<td align="left">cap1</td>
+<td align="left">G2</td>
 </tr>
 <tr class="odd">
 <td align="left">G5</td>
-<td align="left">cap2</td>
-<td align="left">G2</td>
+<td align="left">cap6</td>
+<td align="left">G9</td>
 </tr>
 <tr class="even">
 <td align="left">G6</td>
-<td align="left">cap8</td>
-<td align="left">G8</td>
+<td align="left">cap10</td>
+<td align="left">G1</td>
 </tr>
 <tr class="odd">
 <td align="left">G7</td>
-<td align="left">cap9</td>
-<td align="left">G9</td>
+<td align="left">cap7</td>
+<td align="left">G8</td>
 </tr>
 <tr class="even">
 <td align="left">G8</td>
-<td align="left">cap6</td>
-<td align="left">G6</td>
+<td align="left">cap9</td>
+<td align="left">G3</td>
 </tr>
 <tr class="odd">
 <td align="left">G9</td>
-<td align="left">cap10</td>
-<td align="left">G10</td>
+<td align="left">cap4</td>
+<td align="left">G7</td>
 </tr>
 <tr class="even">
 <td align="left">G10</td>
-<td align="left">cap1</td>
-<td align="left">G1</td>
+<td align="left">cap2</td>
+<td align="left">G5</td>
 </tr>
 </tbody>
 </table>
@@ -540,7 +543,7 @@ horas &lt;- seq(as.POSIXct(&quot;2016-09-26 20:40&quot;),
 horas &lt;- format(horas, &quot;%H:%M&quot;)
 
 ## Sorteio dos grupos para os três dias
-set.seed(1)
+set.seed(2707)
 d1 &lt;- sample(grupo, size = 4)
 d2 &lt;- sample(grupo[-which(grupo %in% d1)], size = 4)
 d3 &lt;- sample(grupo[-which(grupo %in% c(d1, d2))], size = 2)
@@ -561,22 +564,22 @@ kable(db)</code></pre>
 <tr class="odd">
 <td align="left">2016-09-26</td>
 <td align="left">20:40</td>
-<td align="left">G3</td>
+<td align="left">G10</td>
 </tr>
 <tr class="even">
 <td align="left">2016-09-26</td>
 <td align="left">21:00</td>
-<td align="left">G4</td>
+<td align="left">G3</td>
 </tr>
 <tr class="odd">
 <td align="left">2016-09-26</td>
 <td align="left">21:20</td>
-<td align="left">G5</td>
+<td align="left">G4</td>
 </tr>
 <tr class="even">
 <td align="left">2016-09-26</td>
 <td align="left">21:40</td>
-<td align="left">G7</td>
+<td align="left">G5</td>
 </tr>
 <tr class="odd">
 <td align="left">2016-10-03</td>
@@ -591,22 +594,22 @@ kable(db)</code></pre>
 <tr class="odd">
 <td align="left">2016-10-03</td>
 <td align="left">21:20</td>
-<td align="left">G8</td>
+<td align="left">G6</td>
 </tr>
 <tr class="even">
 <td align="left">2016-10-03</td>
 <td align="left">21:40</td>
-<td align="left">G10</td>
+<td align="left">G1</td>
 </tr>
 <tr class="odd">
 <td align="left">2016-10-10</td>
 <td align="left">20:40</td>
-<td align="left">G6</td>
+<td align="left">G7</td>
 </tr>
 <tr class="even">
 <td align="left">2016-10-10</td>
 <td align="left">21:00</td>
-<td align="left">G1</td>
+<td align="left">G8</td>
 </tr>
 <tr class="odd">
 <td align="left">2016-10-10</td>
