@@ -56,12 +56,12 @@ Os grupos são os seguintes:
 - G2: Igor (org), Vanessa, Roger, Junot, Luan
 - G3: Luciana (org), Bianca, Rafael M., Letícia, Andressa
 - G4: Caroline (org), Carla, Gustavo, Pedro
-- G5: Wagner (org), Cristian, Eduardo, Ana Flavia, Guilherme
+- G5: Wagner (org), Cristian, Eduardo, Ana Flavia
 - G6: Ariel (org), Allan, Fábio, Rafael M., Jayme
-- G7: Luka (org), Paulo, Luan, Moisés
+- G7: Luka (org), Paulo, Luan, Moizes P.
 - G8: Alisson (org), Denis, Rodrigo, Jean
 - G9: Guilherme S. (org), Guilherme C., Lazaro S., Marcio Jr.
-- G10: Mirkon G. (org), Moizes P., Thiago A., William B.
+- G10: Mirkon G. (org), Thiago A., William B.
 
 O capítulo do livro atribuído para cada grupo será sorteado da seguinte
 forma:
