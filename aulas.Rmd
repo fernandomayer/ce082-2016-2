@@ -28,7 +28,9 @@ classe aplicadas.
 - **26/09**: [Seminários](02_sem_CME.html). Grupos: G10, G3, G4, G5.
 - **03/10**: [Seminários](02_sem_CME.html). Grupos: G2, G9, G6, G1.
 - **10/10**: [Seminários](02_sem_CME.html). Grupos: G7, G8.
-- **17/10**:
+- **17/10**: Seminário com
+  Prof.
+  [Eduardo Vargas Ferreira](http://www.leg.ufpr.br/doku.php/pessoais:e.ferreira) (LEG/UFPR)
 - **24/10**: Seminário com Prof. Leonardo Sandrini Neto (CEM/UFPR)
 - **31/10**: Seminário com Prof. Maikon Di Domenico (CEM/UFPR)
 - **07/11**:
