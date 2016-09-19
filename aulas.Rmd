@@ -21,10 +21,11 @@ classe aplicadas.
 - **05/09**: Seminário com Prof. [Elias T. Krainski](http://leg.ufpr.br/~elias) (LEG/UFPR)
 - **12/09**: Organização, distribuição e sorteio dos seminários de "Como
   mentir com estatística". Ver [instruções, grupos e datas](02_sem_CME.html).
-- **19/09**: Seminário com
-  Profa.
+- **19/09**: Seminário ("atividades formativas") com Profa.
   [Fernanda Bührer Rizzato](http://www.leg.ufpr.br/doku.php/pessoais:fernanda) e
-  Prof. [Cesar Augusto Taconeli](http://www.leg.ufpr.br/doku.php/pessoais:taconeli)
+  Prof.
+  [Cesar Augusto Taconeli](http://www.leg.ufpr.br/doku.php/pessoais:taconeli).
+  [Slides](seminarios/Seminario_Cesar_e_Fernanda.pdf).
 - **26/09**: [Seminários](02_sem_CME.html). Grupos: G10, G3, G4, G5.
 - **03/10**: [Seminários](02_sem_CME.html). Grupos: G2, G9, G6, G1.
 - **10/10**: [Seminários](02_sem_CME.html). Grupos: G7, G8.
