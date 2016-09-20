@@ -10,6 +10,15 @@ output:
 source("setup_knitr.R")
 ```
 
+<div class="alert alert-danger" role="alert"> **ATENÇÃO!**
+
+- Nos seminários do dia 26/09, o G5 será o comentador do G3 (no lugar do
+  G10).
+- O G10 (se houver) fará a apresentação dia 10/10
+
+</div>
+
+
 # Introdução
 
 Seminário é uma técnica de estudo que inclui **pesquisa**, **discussão**
